@@ -75,9 +75,7 @@ header,
 .footer-info, 
 .footer-blog,
 .footer-us,
-.footer-index,
-.footer-log-in,
-.footer-login{
+.footer-index{
   text-align: center;
   margin-top: 50px;
   margin: 30px;
@@ -199,16 +197,21 @@ configuracion log-in
   width: 400px;
   border-radius: 30px;
   box-shadow: 7px 13px 37px #000;
+  position: absolute;
+  top: 5%;
+  left: 39.5%;
 
 
 }
-.logburg {
+.logburg .banner{
   min-height: 100vh;
   background: url(./fotos/istockphoto-1215569804-612x612.jpg) no-repeat center
     center fixed;
   background-size: cover;
-
+  filter: blur(5px);
+  
 }
+
 
 
 .form-login {
@@ -221,6 +224,10 @@ configuracion log-in
   padding: 20px 30px;
   background: #f5d2ad;
   border-radius: 5%;
+  position: absolute;
+  top: 15%;
+  left: 40%;
+  
 }
 
 
@@ -256,6 +263,12 @@ configuracion log-in
   color: #83311d;
   font-family: 'Alegreya', serif;
   text-decoration: none;
+}
+.footer-log-in{
+  width: 200px; 
+  position: absolute;
+  top: 90%;
+  left: 41%;
 }
 /*
 configurcion de registrarse
