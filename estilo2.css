@@ -12,10 +12,9 @@ a{
 }
 .menu {
   list-style-type: none;
-  background: #7f836a;
+  background: rgb(238, 238, 238);
   font-family: 'Alegreya', serif;
   border-radius: 30px;
-  backdrop-filter: blur(10px);
   box-shadow: 7px 13px 37px #000;
 
 
@@ -33,11 +32,11 @@ a{
   display: inline-block;
 }
 .menu li:hover {
-  background: #9ea384;
+  background: rgb(223, 223, 222);
   border-radius: 5%;
 }
 .menu li a:hover {
-  color: antiquewhite;
+  color: rgb(45, 36, 36);
 }
 h1,
 h2,
@@ -103,12 +102,15 @@ Configuracion del index
 }
 .header{
   grid-area: header;
+  border-radius: 30px;
+
 }
 .prod{
   grid-area: prod;
 }
 .extras{
   grid-area: extras;
+
 }
 .aside{
   grid-area: aside;
@@ -117,7 +119,7 @@ Configuracion del index
 .footer{
   grid-area: footer;
   height: 150px;
-  background: #7f836a;
+  background: rgb(238, 238, 238);
   border-radius: 30px;
   box-shadow: 7px 13px 37px #000;
 
@@ -315,6 +317,7 @@ configuracion info.html
   border-radius: 5%;
   font-family: 'Alegreya', serif;
   color: #83311d;
+  background: #f5d2ad;
 }
 .nombre-info{
   font-family: 'Alegreya', serif;
