@@ -1,0 +1,25 @@
+nav{
+    background: rgb(238, 238, 238);
+    font-family: 'Alegreya', serif;
+    border-radius: 30px;
+    box-shadow: 7px 13px 37px #000;
+  
+  }
+  nav a:hover{
+    background: rgb(223, 223, 222);
+    border-radius: 5%;
+  }
+  
+  li{
+    text-decoration: none;
+    color: #83311d;
+  }
+  
+  li:hover {
+    background: rgb(223, 223, 222);
+    border-radius: 5%;
+  }
+  a{
+    font-size: 20px;
+    font-weight: bold;
+  }
