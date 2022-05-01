@@ -8,6 +8,11 @@ nav{
   nav a:hover{
     background: rgb(223, 223, 222);
     border-radius: 5%;
+    transition: background-color 1s ease-out;
+  }
+  .nav-item:hover{
+    transition: background-color 1s ease-out;
+
   }
   
   li{

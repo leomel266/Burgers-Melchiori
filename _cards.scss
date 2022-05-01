@@ -1,0 +1,309 @@
+.card1{
+    background: url(/fotos/hamburguesa-2.jpg);
+    background-size: cover;
+    padding: 8rem 0 0;
+    max-width: 35ch;
+    border-radius: 0.5rem;
+    transition: transform 500ms ease;
+    overflow: hidden;
+  }
+  .card1:hover{
+    transform: scale(1.05);
+  }
+.card1:hover .card-title1::after{
+    transform: scaleX(1);
+}
+.card1:hover .card-content1{
+    transform: translateY(0);
+    transition-delay: 500ms;
+}
+.card1:hover .card-content1 >*:not(.card-title1){
+    opacity: 1;
+    transition-delay: 1000ms;
+}
+/*----------CARTA 2---------*/
+.card2{
+    background: url(/fotos/hamburguesa-3.jpg);
+    background-size: cover;
+    padding: 8rem 0 0;
+    max-width: 35ch;
+    border-radius: 0.5rem;
+    transition: transform 500ms ease;
+    overflow: hidden;
+}
+.card2:hover{
+    transform: scale(1.05);
+  }
+.card2:hover .card-title1::after{
+    transform: scaleX(1);
+}
+.card2:hover .card-content1{
+    transform: translateY(0);
+    transition-delay: 500ms;
+}
+.card2:hover .card-content1 >*:not(.card-title1){
+    opacity: 1;
+    transition-delay: 1000ms;
+}
+/*----------CARTA 3---------*/
+
+.card3{
+    background: url(/fotos/hamburguesa-4.jpg);
+    background-size: cover;
+    padding: 8rem 0 0;
+    max-width: 35ch;
+    border-radius: 0.5rem;
+    transition: transform 500ms ease;
+    overflow: hidden;
+}
+.card3:hover{
+    transform: scale(1.05);
+  }
+.card3:hover .card-title1::after{
+    transform: scaleX(1);
+}
+.card3:hover .card-content1{
+    transform: translateY(0);
+    transition-delay: 500ms;
+}
+.card3:hover .card-content1 >*:not(.card-title1){
+    opacity: 1;
+    transition-delay: 1000ms;
+}
+/*----------CARTA 4---------*/
+
+.card4{
+    background: url(/fotos/h2.jpg);
+    background-size: cover;
+    padding: 8rem 0 0;
+    max-width: 35ch;
+    border-radius: 0.5rem;
+    transition: transform 500ms ease;
+    overflow: hidden;
+}
+.card4:hover{
+    transform: scale(1.05);
+  }
+.card4:hover .card-title1::after{
+    transform: scaleX(1);
+}
+.card4:hover .card-content1{
+    transform: translateY(0);
+    transition-delay: 500ms;
+}
+.card4:hover .card-content1 >*:not(.card-title1){
+    opacity: 1;
+    transition-delay: 1000ms;
+}
+
+/*----------CARTA 5---------*/
+
+.card5{
+    background: url(/fotos/h5.jpg);
+    background-size: cover;
+    padding: 8rem 0 0;
+    max-width: 35ch;
+    border-radius: 0.5rem;
+    transition: transform 500ms ease;
+    overflow: hidden;
+}
+.card5:hover{
+    transform: scale(1.05);
+  }
+.card5:hover .card-title1::after{
+    transform: scaleX(1);
+}
+.card5:hover .card-content1{
+    transform: translateY(0);
+    transition-delay: 500ms;
+}
+.card5:hover .card-content1 >*:not(.card-title1){
+    opacity: 1;
+    transition-delay: 1000ms;
+}
+/*----------CARTA 6---------*/
+
+.card6{
+    background: url(/fotos/h6.jpg);
+    background-size: cover;
+    padding: 8rem 0 0;
+    max-width: 35ch;
+    border-radius: 0.5rem;
+    transition: transform 500ms ease;
+    overflow: hidden;
+}
+.card6:hover{
+    transform: scale(1.05);
+  }
+.card6:hover .card-title1::after{
+    transform: scaleX(1);
+}
+.card6:hover .card-content1{
+    transform: translateY(0);
+    transition-delay: 500ms;
+}
+.card6:hover .card-content1 >*:not(.card-title1){
+    opacity: 1;
+    transition-delay: 1000ms;
+}
+
+
+/*----------CARTA 7---------*/
+
+.card7{
+    background: url(/fotos/h7.jpg);
+    background-size: cover;
+    padding: 8rem 0 0;
+    max-width: 35ch;
+    border-radius: 0.5rem;
+    transition: transform 500ms ease;
+    overflow: hidden;
+}
+.card7:hover{
+    transform: scale(1.05);
+  }
+.card7:hover .card-title1::after{
+    transform: scaleX(1);
+}
+.card7:hover .card-content1{
+    transform: translateY(0);
+    transition-delay: 500ms;
+}
+.card7:hover .card-content1 >*:not(.card-title1){
+    opacity: 1;
+    transition-delay: 1000ms;
+}
+
+
+/*----------CARTA 8---------*/
+
+.card8{
+    background: url(/fotos/h8.jpg);
+    background-size: cover;
+    padding: 8rem 0 0;
+    max-width: 35ch;
+    border-radius: 0.5rem;
+    transition: transform 500ms ease;
+    overflow: hidden;
+}
+.card8:hover{
+    transform: scale(1.05);
+  }
+.card8:hover .card-title1::after{
+    transform: scaleX(1);
+}
+.card8:hover .card-content1{
+    transform: translateY(0);
+    transition-delay: 500ms;
+}
+.card8:hover .card-content1 >*:not(.card-title1){
+    opacity: 1;
+    transition-delay: 1000ms;
+}
+
+/*----------Minutas---------*/
+
+/*----------CARTA 1M---------*/
+
+.card1m{
+    background: url(/fotos/p1.png);
+    background-size: cover;
+    padding: 8rem 0 0;
+    max-width: 35ch;
+    border-radius: 0.5rem;
+    transition: transform 500ms ease;
+    overflow: hidden;
+}
+.card1m:hover{
+    transform: scale(1.05);
+  }
+.card1m:hover .card-title1::after{
+    transform: scaleX(1);
+}
+.card1m:hover .card-content1{
+    transform: translateY(0);
+    transition-delay: 500ms;
+}
+.card1m:hover .card-content1 >*:not(.card-title1){
+    opacity: 1;
+    transition-delay: 1000ms;
+}
+
+/*----------CARTA 2M---------*/
+
+.card2m{
+    background: url(/fotos/e1.jpg);
+    background-size: cover;
+    padding: 8rem 0 0;
+    max-width: 35ch;
+    border-radius: 0.5rem;
+    transition: transform 500ms ease;
+    overflow: hidden;
+}
+.card2m:hover{
+    transform: scale(1.05);
+  }
+.card2m:hover .card-title1::after{
+    transform: scaleX(1);
+}
+.card2m:hover .card-content1{
+    transform: translateY(0);
+    transition-delay: 500ms;
+}
+.card2m:hover .card-content1 >*:not(.card-title1){
+    opacity: 1;
+    transition-delay: 1000ms;
+}
+
+/*----------CARTA 3M---------*/
+
+.card3m{
+    background: url(/fotos/ac1.jpg);
+    background-size: cover;
+    padding: 8rem 0 0;
+    max-width: 35ch;
+    border-radius: 0.5rem;
+    transition: transform 500ms ease;
+    overflow: hidden;
+}
+.card3m:hover{
+    transform: scale(1.05);
+  }
+.card3m:hover .card-title1::after{
+    transform: scaleX(1);
+}
+.card3m:hover .card-content1{
+    transform: translateY(0);
+    transition-delay: 500ms;
+}
+.card3m:hover .card-content1 >*:not(.card-title1){
+    opacity: 1;
+    transition-delay: 1000ms;
+}
+
+/*----------CARTA 3M---------*/
+
+.card4m{
+    background: url(/fotos/f1.jpg);
+    background-size: cover;
+    padding: 8rem 0 0;
+    max-width: 35ch;
+    border-radius: 0.5rem;
+    transition: transform 500ms ease;
+    overflow: hidden;
+}
+.card4m:hover{
+    transform: scale(1.05);
+  }
+.card4m:hover .card-title1::after{
+    transform: scaleX(1);
+}
+.card4m:hover .card-content1{
+    transform: translateY(0);
+    transition-delay: 500ms;
+}
+.card4m:hover .card-content1 >*:not(.card-title1){
+    opacity: 1;
+    transition-delay: 1000ms;
+}
+

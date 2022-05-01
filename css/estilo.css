@@ -14,7 +14,11 @@ nav {
 
 nav a:hover {
   background: #dfdfde;
-  border-radius: 5%; }
+  border-radius: 5%;
+  transition: background-color 1s ease-out; }
+
+.nav-item:hover {
+  transition: background-color 1s ease-out; }
 
 li {
   text-decoration: none;
@@ -38,34 +42,30 @@ h2 {
   font-family: 'Alegreya', serif;
   font-weight: bolder; }
 
+html {
+  height: 100%; }
+
 body {
   background: #f5d2ad;
   font-family: "Fredoka", sans-serif;
-  display: flex;
-  flex-direction: column;
-  color: #83311d; }
-
-main {
-  display: flex;
-  flex-direction: row; }
+  color: #83311d;
+  min-height: 100%; }
 
 section,
 nav,
 aside,
 header,
 .footer {
-  padding: 0.5rem;
-  margin: 0.5rem; }
+  padding: 0.5rem; }
 
 .container {
   width: 100%;
-  height: 80vh;
-  margin: 20px auto;
+  height: 90vh;
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   grid-template-rows: repeat(3, 1fr);
   grid-template-areas: "header header header" "prod extras aside" "footer footer footer";
-  gap: 10px; }
+  gap: 20px; }
 
 .header {
   grid-area: header;
@@ -113,6 +113,14 @@ header,
 .burger-index:hover {
   transform: scale(1.1, 1.1); }
 
+ul li:hover {
+  background: none; }
+
+ul li {
+  text-align: center;
+  list-style: none;
+  padding: 5px; }
+
 .glass {
   position: absolute;
   pointer-events: none;
@@ -156,7 +164,7 @@ header,
 
 .logburg .banner {
   min-height: 100vh;
-  background: url(/fotos/istockphoto-1215569804-612x612.jpg) no-repeat center center fixed;
+  background: url(/fotos/h2.jpg) no-repeat center center fixed;
   background-size: cover;
   filter: blur(5px); }
 
@@ -184,14 +192,16 @@ header,
 
 .controls {
   width: 100%;
-  border: 1px solid;
   margin-bottom: 15px;
   padding: 11px 10px;
   background: #f5d2ad;
   font-weight: bold;
   border-top: none;
   border-left: none;
-  border-right: none; }
+  border-right: none;
+  border-bottom: #82311c 1px solid;
+  outline: none;
+  color: #82311c; }
 
 .buttons {
   width: 100%;
@@ -222,7 +232,6 @@ header,
   height: 400px;
   box-shadow: 7px 13px 37px #000;
   padding: 20px 30px;
-  background: #fcd7b0;
   border-radius: 5%; }
 
 .form-login-res h3 {
@@ -240,6 +249,83 @@ header,
 /*
   configuracion info.html
   */
+.content {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em; }
+
+.contact-wrapper {
+  border-radius: 30px;
+  box-shadow: 0px 0px 20px 0px #000;
+  color: #f5d2ad; }
+
+.contact-wrapper > * {
+  padding: 1em; }
+
+.contact-form {
+  background: #83311d;
+  border-radius: 30px 30px 0 0; }
+
+.contact-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+
+.contact-form form .block {
+  grid-column: 1/3; }
+
+.contact-form form p {
+  margin: 0;
+  padding: 1em; }
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+  width: 100%;
+  padding: 0.7em;
+  border: none;
+  background: none;
+  outline: none;
+  border-bottom: 1px solid #f5d2ad;
+  color: #f5d2ad; }
+
+.contact-form form button {
+  background: #f5d2ad;
+  color: #83311d;
+  border-radius: 30px;
+  text-transform: uppercase;
+  padding: 1em; }
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+  background: #e9775b;
+  color: #f5d2ad;
+  border: none;
+  transition: background-color 1s ease-out;
+  outline: 0; }
+
+.contact-form form textarea {
+  margin: 0; }
+
+.contact-info h4,
+.contact-info ul,
+.contact-info p {
+  text-align: center;
+  margin: 0 0 1rem 0; }
+
+.contact-info p {
+  color: #83311d; }
+
+.contact-info ul {
+  list-style: none;
+  padding: 0; }
+
+.contact-info ul li {
+  padding: .3em; }
+
+.contact-info ul li:hover {
+  background: none; }
+
 .nombre-info,
 .mail-info {
   padding: 5px;
@@ -289,6 +375,355 @@ section h2 {
 div textarea {
   margin: 30px; }
 
+/*
+  us
+  */
+.card {
+  border-radius: 30px; }
+
+.prod .row {
+  padding: 10px; }
+
+.extras .row {
+  padding: 10px; }
+
+.card1 {
+  background: url(/fotos/hamburguesa-2.jpg);
+  background-size: cover;
+  padding: 8rem 0 0;
+  max-width: 35ch;
+  border-radius: 0.5rem;
+  transition: transform 500ms ease;
+  overflow: hidden; }
+
+.card1:hover {
+  transform: scale(1.05); }
+
+.card1:hover .card-title1::after {
+  transform: scaleX(1); }
+
+.card1:hover .card-content1 {
+  transform: translateY(0);
+  transition-delay: 500ms; }
+
+.card1:hover .card-content1 > *:not(.card-title1) {
+  opacity: 1;
+  transition-delay: 1000ms; }
+
+/*----------CARTA 2---------*/
+.card2 {
+  background: url(/fotos/hamburguesa-3.jpg);
+  background-size: cover;
+  padding: 8rem 0 0;
+  max-width: 35ch;
+  border-radius: 0.5rem;
+  transition: transform 500ms ease;
+  overflow: hidden; }
+
+.card2:hover {
+  transform: scale(1.05); }
+
+.card2:hover .card-title1::after {
+  transform: scaleX(1); }
+
+.card2:hover .card-content1 {
+  transform: translateY(0);
+  transition-delay: 500ms; }
+
+.card2:hover .card-content1 > *:not(.card-title1) {
+  opacity: 1;
+  transition-delay: 1000ms; }
+
+/*----------CARTA 3---------*/
+.card3 {
+  background: url(/fotos/hamburguesa-4.jpg);
+  background-size: cover;
+  padding: 8rem 0 0;
+  max-width: 35ch;
+  border-radius: 0.5rem;
+  transition: transform 500ms ease;
+  overflow: hidden; }
+
+.card3:hover {
+  transform: scale(1.05); }
+
+.card3:hover .card-title1::after {
+  transform: scaleX(1); }
+
+.card3:hover .card-content1 {
+  transform: translateY(0);
+  transition-delay: 500ms; }
+
+.card3:hover .card-content1 > *:not(.card-title1) {
+  opacity: 1;
+  transition-delay: 1000ms; }
+
+/*----------CARTA 4---------*/
+.card4 {
+  background: url(/fotos/h2.jpg);
+  background-size: cover;
+  padding: 8rem 0 0;
+  max-width: 35ch;
+  border-radius: 0.5rem;
+  transition: transform 500ms ease;
+  overflow: hidden; }
+
+.card4:hover {
+  transform: scale(1.05); }
+
+.card4:hover .card-title1::after {
+  transform: scaleX(1); }
+
+.card4:hover .card-content1 {
+  transform: translateY(0);
+  transition-delay: 500ms; }
+
+.card4:hover .card-content1 > *:not(.card-title1) {
+  opacity: 1;
+  transition-delay: 1000ms; }
+
+/*----------CARTA 5---------*/
+.card5 {
+  background: url(/fotos/h5.jpg);
+  background-size: cover;
+  padding: 8rem 0 0;
+  max-width: 35ch;
+  border-radius: 0.5rem;
+  transition: transform 500ms ease;
+  overflow: hidden; }
+
+.card5:hover {
+  transform: scale(1.05); }
+
+.card5:hover .card-title1::after {
+  transform: scaleX(1); }
+
+.card5:hover .card-content1 {
+  transform: translateY(0);
+  transition-delay: 500ms; }
+
+.card5:hover .card-content1 > *:not(.card-title1) {
+  opacity: 1;
+  transition-delay: 1000ms; }
+
+/*----------CARTA 6---------*/
+.card6 {
+  background: url(/fotos/h6.jpg);
+  background-size: cover;
+  padding: 8rem 0 0;
+  max-width: 35ch;
+  border-radius: 0.5rem;
+  transition: transform 500ms ease;
+  overflow: hidden; }
+
+.card6:hover {
+  transform: scale(1.05); }
+
+.card6:hover .card-title1::after {
+  transform: scaleX(1); }
+
+.card6:hover .card-content1 {
+  transform: translateY(0);
+  transition-delay: 500ms; }
+
+.card6:hover .card-content1 > *:not(.card-title1) {
+  opacity: 1;
+  transition-delay: 1000ms; }
+
+/*----------CARTA 7---------*/
+.card7 {
+  background: url(/fotos/h7.jpg);
+  background-size: cover;
+  padding: 8rem 0 0;
+  max-width: 35ch;
+  border-radius: 0.5rem;
+  transition: transform 500ms ease;
+  overflow: hidden; }
+
+.card7:hover {
+  transform: scale(1.05); }
+
+.card7:hover .card-title1::after {
+  transform: scaleX(1); }
+
+.card7:hover .card-content1 {
+  transform: translateY(0);
+  transition-delay: 500ms; }
+
+.card7:hover .card-content1 > *:not(.card-title1) {
+  opacity: 1;
+  transition-delay: 1000ms; }
+
+/*----------CARTA 8---------*/
+.card8 {
+  background: url(/fotos/h8.jpg);
+  background-size: cover;
+  padding: 8rem 0 0;
+  max-width: 35ch;
+  border-radius: 0.5rem;
+  transition: transform 500ms ease;
+  overflow: hidden; }
+
+.card8:hover {
+  transform: scale(1.05); }
+
+.card8:hover .card-title1::after {
+  transform: scaleX(1); }
+
+.card8:hover .card-content1 {
+  transform: translateY(0);
+  transition-delay: 500ms; }
+
+.card8:hover .card-content1 > *:not(.card-title1) {
+  opacity: 1;
+  transition-delay: 1000ms; }
+
+/*----------Minutas---------*/
+/*----------CARTA 1M---------*/
+.card1m {
+  background: url(/fotos/p1.png);
+  background-size: cover;
+  padding: 8rem 0 0;
+  max-width: 35ch;
+  border-radius: 0.5rem;
+  transition: transform 500ms ease;
+  overflow: hidden; }
+
+.card1m:hover {
+  transform: scale(1.05); }
+
+.card1m:hover .card-title1::after {
+  transform: scaleX(1); }
+
+.card1m:hover .card-content1 {
+  transform: translateY(0);
+  transition-delay: 500ms; }
+
+.card1m:hover .card-content1 > *:not(.card-title1) {
+  opacity: 1;
+  transition-delay: 1000ms; }
+
+/*----------CARTA 2M---------*/
+.card2m {
+  background: url(/fotos/e1.jpg);
+  background-size: cover;
+  padding: 8rem 0 0;
+  max-width: 35ch;
+  border-radius: 0.5rem;
+  transition: transform 500ms ease;
+  overflow: hidden; }
+
+.card2m:hover {
+  transform: scale(1.05); }
+
+.card2m:hover .card-title1::after {
+  transform: scaleX(1); }
+
+.card2m:hover .card-content1 {
+  transform: translateY(0);
+  transition-delay: 500ms; }
+
+.card2m:hover .card-content1 > *:not(.card-title1) {
+  opacity: 1;
+  transition-delay: 1000ms; }
+
+/*----------CARTA 3M---------*/
+.card3m {
+  background: url(/fotos/ac1.jpg);
+  background-size: cover;
+  padding: 8rem 0 0;
+  max-width: 35ch;
+  border-radius: 0.5rem;
+  transition: transform 500ms ease;
+  overflow: hidden; }
+
+.card3m:hover {
+  transform: scale(1.05); }
+
+.card3m:hover .card-title1::after {
+  transform: scaleX(1); }
+
+.card3m:hover .card-content1 {
+  transform: translateY(0);
+  transition-delay: 500ms; }
+
+.card3m:hover .card-content1 > *:not(.card-title1) {
+  opacity: 1;
+  transition-delay: 1000ms; }
+
+/*----------CARTA 3M---------*/
+.card4m {
+  background: url(/fotos/f1.jpg);
+  background-size: cover;
+  padding: 8rem 0 0;
+  max-width: 35ch;
+  border-radius: 0.5rem;
+  transition: transform 500ms ease;
+  overflow: hidden; }
+
+.card4m:hover {
+  transform: scale(1.05); }
+
+.card4m:hover .card-title1::after {
+  transform: scaleX(1); }
+
+.card4m:hover .card-content1 {
+  transform: translateY(0);
+  transition-delay: 500ms; }
+
+.card4m:hover .card-content1 > *:not(.card-title1) {
+  opacity: 1;
+  transition-delay: 1000ms; }
+
+.card-content1 {
+  padding: 1.5rem;
+  background: linear-gradient(rgba(0, 0, 0, 0), black);
+  transform: translateY(65%);
+  transition: transform 500ms ease; }
+
+.card-content1 > *:not(.card-title1) {
+  opacity: 0;
+  transition: opacity 500ms linear; }
+
+.card-title1 {
+  position: relative;
+  width: max-content;
+  color: #f5d2ad; }
+
+.card-body1 {
+  color: #f5d2ad;
+  padding-top: 10px; }
+
+.card-title1::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  background-color: #83311d;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 500ms ease; }
+
+.button1 {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  background: #83311d;
+  color: #f5d2ad;
+  padding: 0.5em 1.25em;
+  border-radius: 0.5rem; }
+
+.button1:hover,
+.button1:focus {
+  background: #f5d2ad;
+  color: #83311d;
+  transition: background-color 500ms ease; }
+
+/*
+  Responsive
+  */
 @media only screen and (max-width: 1000px) {
   .container {
     grid-template-columns: 1fr;
