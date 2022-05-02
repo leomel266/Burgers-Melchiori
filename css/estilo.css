@@ -46,9 +46,9 @@ html {
   height: 100%; }
 
 body {
+  color: #83311d;
   background: #f5d2ad;
   font-family: "Fredoka", sans-serif;
-  color: #83311d;
   min-height: 100%; }
 
 section,
@@ -133,21 +133,6 @@ ul li {
 /*
   configuracion de Blog
   */
-.blog {
-  width: 30%;
-  margin: 5px;
-  padding: 10px; }
-
-.nombre-info {
-  font-family: "Fredoka", sans-serif;
-  color: #000;
-  text-align: center; }
-
-.mail-info {
-  font-family: "Fredoka", sans-serif;
-  color: #000;
-  text-align: center; }
-
 /*
   configuracion log-in
   */
@@ -239,12 +224,20 @@ ul li {
   margin-bottom: 25px; }
 
 .buttons {
+  color: #f5d2ad;
+  background: #83311d;
   border-radius: 30px;
   font-size: larger;
-  color: white;
   font-family: 'Alegreya', serif;
-  background: #83311d;
   font-weight: normal; }
+
+.buttons:hover,
+.buttons:focus {
+  color: #f5d2ad;
+  background: #791f09;
+  border: 1px solid #83311d;
+  transition: background-color 1s ease-out;
+  outline: 0; }
 
 /*
   configuracion info.html
@@ -298,9 +291,9 @@ ul li {
 
 .contact-form form button:hover,
 .contact-form form button:focus {
-  background: #e9775b;
+  background: #83311d;
   color: #f5d2ad;
-  border: none;
+  border: 5px solid #f5d2ad;
   transition: background-color 1s ease-out;
   outline: 0; }
 
@@ -325,52 +318,6 @@ ul li {
 
 .contact-info ul li:hover {
   background: none; }
-
-.nombre-info,
-.mail-info {
-  padding: 5px;
-  margin: 5px; }
-
-section h2 {
-  text-align: center; }
-
-.info-form {
-  width: 400px;
-  margin-bottom: 70px;
-  height: 600px;
-  margin-top: 15px;
-  box-shadow: 10px 15px 50px #000;
-  border-radius: 5%;
-  font-family: 'Alegreya', serif;
-  color: #83311d;
-  background: #f5d2ad; }
-
-.nombre-info {
-  font-family: 'Alegreya', serif;
-  color: #83311d;
-  font-weight: bold; }
-
-.mail-info {
-  font-family: 'Alegreya', serif;
-  color: #83311d;
-  font-weight: bold; }
-
-.btn-info {
-  margin: 1px;
-  background-color: #f5d2ad; }
-
-.btn-info:hover {
-  background-color: #f5d2ad; }
-
-.btn-info1 {
-  margin: 5px;
-  width: 150px;
-  height: 30px;
-  border-radius: 30px;
-  background: #83311d;
-  color: white;
-  font-family: 'Alegreya', serif;
-  font-size: 15px; }
 
 div textarea {
   margin: 30px; }
@@ -404,11 +351,11 @@ div textarea {
 
 .card1:hover .card-content1 {
   transform: translateY(0);
-  transition-delay: 500ms; }
+  transition-delay: 300ms; }
 
 .card1:hover .card-content1 > *:not(.card-title1) {
   opacity: 1;
-  transition-delay: 1000ms; }
+  transition-delay: 500ms; }
 
 /*----------CARTA 2---------*/
 .card2 {
@@ -428,11 +375,11 @@ div textarea {
 
 .card2:hover .card-content1 {
   transform: translateY(0);
-  transition-delay: 500ms; }
+  transition-delay: 300ms; }
 
 .card2:hover .card-content1 > *:not(.card-title1) {
   opacity: 1;
-  transition-delay: 1000ms; }
+  transition-delay: 500ms; }
 
 /*----------CARTA 3---------*/
 .card3 {
@@ -452,11 +399,11 @@ div textarea {
 
 .card3:hover .card-content1 {
   transform: translateY(0);
-  transition-delay: 500ms; }
+  transition-delay: 300ms; }
 
 .card3:hover .card-content1 > *:not(.card-title1) {
   opacity: 1;
-  transition-delay: 1000ms; }
+  transition-delay: 500ms; }
 
 /*----------CARTA 4---------*/
 .card4 {
@@ -476,11 +423,11 @@ div textarea {
 
 .card4:hover .card-content1 {
   transform: translateY(0);
-  transition-delay: 500ms; }
+  transition-delay: 300ms; }
 
 .card4:hover .card-content1 > *:not(.card-title1) {
   opacity: 1;
-  transition-delay: 1000ms; }
+  transition-delay: 500ms; }
 
 /*----------CARTA 5---------*/
 .card5 {
@@ -500,11 +447,11 @@ div textarea {
 
 .card5:hover .card-content1 {
   transform: translateY(0);
-  transition-delay: 500ms; }
+  transition-delay: 300ms; }
 
 .card5:hover .card-content1 > *:not(.card-title1) {
   opacity: 1;
-  transition-delay: 1000ms; }
+  transition-delay: 500ms; }
 
 /*----------CARTA 6---------*/
 .card6 {
@@ -524,11 +471,11 @@ div textarea {
 
 .card6:hover .card-content1 {
   transform: translateY(0);
-  transition-delay: 500ms; }
+  transition-delay: 300ms; }
 
 .card6:hover .card-content1 > *:not(.card-title1) {
   opacity: 1;
-  transition-delay: 1000ms; }
+  transition-delay: 500ms; }
 
 /*----------CARTA 7---------*/
 .card7 {
@@ -548,11 +495,11 @@ div textarea {
 
 .card7:hover .card-content1 {
   transform: translateY(0);
-  transition-delay: 500ms; }
+  transition-delay: 300ms; }
 
 .card7:hover .card-content1 > *:not(.card-title1) {
   opacity: 1;
-  transition-delay: 1000ms; }
+  transition-delay: 500ms; }
 
 /*----------CARTA 8---------*/
 .card8 {
@@ -572,11 +519,11 @@ div textarea {
 
 .card8:hover .card-content1 {
   transform: translateY(0);
-  transition-delay: 500ms; }
+  transition-delay: 300ms; }
 
 .card8:hover .card-content1 > *:not(.card-title1) {
   opacity: 1;
-  transition-delay: 1000ms; }
+  transition-delay: 500ms; }
 
 /*----------Minutas---------*/
 /*----------CARTA 1M---------*/
@@ -597,11 +544,11 @@ div textarea {
 
 .card1m:hover .card-content1 {
   transform: translateY(0);
-  transition-delay: 500ms; }
+  transition-delay: 300ms; }
 
 .card1m:hover .card-content1 > *:not(.card-title1) {
   opacity: 1;
-  transition-delay: 1000ms; }
+  transition-delay: 500ms; }
 
 /*----------CARTA 2M---------*/
 .card2m {
@@ -621,11 +568,11 @@ div textarea {
 
 .card2m:hover .card-content1 {
   transform: translateY(0);
-  transition-delay: 500ms; }
+  transition-delay: 300ms; }
 
 .card2m:hover .card-content1 > *:not(.card-title1) {
   opacity: 1;
-  transition-delay: 1000ms; }
+  transition-delay: 500ms; }
 
 /*----------CARTA 3M---------*/
 .card3m {
@@ -645,11 +592,11 @@ div textarea {
 
 .card3m:hover .card-content1 {
   transform: translateY(0);
-  transition-delay: 500ms; }
+  transition-delay: 300ms; }
 
 .card3m:hover .card-content1 > *:not(.card-title1) {
   opacity: 1;
-  transition-delay: 1000ms; }
+  transition-delay: 500ms; }
 
 /*----------CARTA 3M---------*/
 .card4m {
@@ -669,21 +616,21 @@ div textarea {
 
 .card4m:hover .card-content1 {
   transform: translateY(0);
-  transition-delay: 500ms; }
+  transition-delay: 300ms; }
 
 .card4m:hover .card-content1 > *:not(.card-title1) {
   opacity: 1;
-  transition-delay: 1000ms; }
+  transition-delay: 500ms; }
 
 .card-content1 {
   padding: 1.5rem;
   background: linear-gradient(rgba(0, 0, 0, 0), black);
   transform: translateY(65%);
-  transition: transform 500ms ease; }
+  transition: transform 300ms ease; }
 
 .card-content1 > *:not(.card-title1) {
   opacity: 0;
-  transition: opacity 500ms linear; }
+  transition: opacity 300ms linear; }
 
 .card-title1 {
   position: relative;
@@ -704,22 +651,23 @@ div textarea {
   background-color: #83311d;
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 500ms ease; }
+  transition: transform 300ms ease; }
 
 .button1 {
   cursor: pointer;
   display: inline-block;
   text-decoration: none;
-  background: #83311d;
   color: #f5d2ad;
+  background: #83311d;
   padding: 0.5em 1.25em;
-  border-radius: 0.5rem; }
+  border-radius: 0.5rem;
+  text-transform: uppercase; }
 
 .button1:hover,
 .button1:focus {
-  background: #f5d2ad;
-  color: #83311d;
-  transition: background-color 500ms ease; }
+  color: #f5d2ad;
+  background: #791f09;
+  transition: background-color 300ms ease; }
 
 /*
   Responsive
