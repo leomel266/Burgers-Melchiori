@@ -60,10 +60,11 @@
     margin: 20px;
     border-radius: 5%;
     box-shadow: 7px 13px 37px #000;
+    transition: all 0.5s;
   
   }
   .burger-index:hover{
-    transform: scale(1.1, 1.1);
+    transform: scale(1.05, 1.05);
   
   }
   ul li:hover{
@@ -74,7 +75,13 @@
     list-style: none;
     padding: 5px;
   }
-  
+  .carousel{
+    transition: all 0.5s;
+  }
+  .carousel:hover{
+    transform: scale(1.05, 1.05);
+
+  }
   .glass{
     position: absolute;
     pointer-events: none;
