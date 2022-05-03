@@ -56,14 +56,12 @@
     margin: 10px;
   }
   .burger-index{
-    padding: 10px;
-    margin: 20px;
     border-radius: 5%;
     box-shadow: 7px 13px 37px #000;
     transition: all 0.5s;
-  
   }
   .burger-index:hover{
+    background: #000;
     transform: scale(1.05, 1.05);
   
   }
@@ -76,11 +74,14 @@
     padding: 5px;
   }
   .carousel{
+    border-radius: 30px;
     transition: all 0.5s;
   }
   .carousel:hover{
     transform: scale(1.05, 1.05);
-
+    box-shadow: 7px 13px 37px #000;
+    background: #000;
+  
   }
   .glass{
     position: absolute;
@@ -151,12 +152,7 @@
   @import "controls";
 
   
-  .buttons {
-    width: 100%;
-    height: 40px;
-    border: none;
-    margin-bottom: 16px;
-  }
+
   .form-login p {
     height: 40px;
     text-align: center;
@@ -193,12 +189,17 @@
     font-size: larger;
     font-family: 'Alegreya', serif;
     font-weight:normal;
+    transition: all 0.5s ease;
+    width: 100%;
+    height: 40px;
+    border: none;
+    margin-bottom: 16px;
   }
   .buttons:hover,
   .buttons:focus{
     @include colors(#f5d2ad,#791f09 );
     border: 1px solid #83311d;
-    transition: background-color 1s ease-out;
+    box-shadow: 7px 13px 37px #000;
     outline: 0;
   }
   /*

@@ -5,14 +5,20 @@ nav{
     box-shadow: 7px 13px 37px #000;
   
   }
+  nav a{
+    transition: all 0.5s ease;
+
+  }
   nav a:hover{
     background: rgb(223, 223, 222);
     border-radius: 5%;
-    transition: background-color 1s ease-out;
+    transform: scale(1.05, 1.05);
+    transition: background-color 0.5s ease-out;
+
+
   }
   .nav-item:hover{
     transition: background-color 1s ease-out;
-
   }
   
   li{
