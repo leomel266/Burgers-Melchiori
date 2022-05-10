@@ -57,12 +57,13 @@
   }
   .burger-index{
     border-radius: 5%;
-    box-shadow: 7px 13px 37px #000;
+    box-shadow: 7px 13px 37px rgb(124, 124, 124);
     transition: all 0.5s;
   }
   .burger-index:hover{
+    box-shadow: 7px 13px 37px #000;
     background: #000;
-    transform: scale(1.05, 1.05);
+    transform: scale(1.01, 1.01);
   
   }
   ul li:hover{
@@ -76,9 +77,11 @@
   .carousel{
     border-radius: 30px;
     transition: all 0.5s;
+    box-shadow: 7px 13px 37px rgb(124, 124, 124);
+
   }
   .carousel:hover{
-    transform: scale(1.05, 1.05);
+    transform: scale(1.01, 1.01);
     box-shadow: 7px 13px 37px #000;
     background: #000;
   
@@ -92,7 +95,17 @@
     background: transparent;
     backdrop-filter: blur(10px);
   }
-  
+  .footer .row{
+    text-align: center;
+    position: relative;
+    margin-bottom: 30%;
+    bottom: 70%;
+    .col-md-12 a{
+      text-decoration: none;
+      color: #83311d;
+      margin: 0.7rem;
+    }
+  }
   /*
   configuracion de Blog
   */
@@ -108,8 +121,10 @@
     border-radius: 30px;
     box-shadow: 7px 13px 37px #000;
     position: absolute;
-    top: 5%;
-    left: 39.5%;
+    top: 4%;
+    left: 0;
+    right: 0;
+    margin: auto;
   }
 
   .logburg .banner{
@@ -118,7 +133,6 @@
       center fixed;
     background-size: cover;
     filter: blur(5px);
-    
   }
   
   
@@ -135,7 +149,8 @@
     border-radius: 5%;
     position: absolute;
     top: 15%;
-    left: 40%;
+    left: 0;
+    right: 0;
     
   }
   
@@ -168,6 +183,17 @@
     top: 90%;
     left: 39%;
   }
+  .footer-log-in .row{
+    text-align: center;
+    position: absolute;
+    width: 420px;
+    margin-top: 10%;
+    .col-md-12 a{
+    text-decoration: none;
+    list-style: none;
+    color: #83311d;
+    }
+  }
 
   /*
   configurcion de registrarse
@@ -175,9 +201,14 @@
   .form-login-res {
     width: 400px;
     height: 400px;
-    box-shadow: 7px 13px 37px #000;
+    box-shadow: 7px 13px 37px rgb(124, 124, 124);
     padding: 20px 30px;
     border-radius: 5%;
+    transition: all 0.5s ease;
+  }
+  .form-login-res:hover{
+    box-shadow: 7px 13px 37px #000;
+    transform: scale(1.01,1.01);
   }
   .form-login-res h3{
     margin-top: 10px;
@@ -213,14 +244,14 @@
   }
 
   /*
-  us
+  menu
   */
   .card{
     border-radius: 30px;
   }
   
   .extras .row{
-    padding: 10px;
+    padding: 0.55em;
   }
   
   @import "cards";
@@ -296,7 +327,5 @@
       "footer ";
       gap: 10px;
     }
-    body{
-      background-color: #e9775b;
-    }
+    
   }

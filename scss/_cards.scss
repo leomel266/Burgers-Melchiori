@@ -6,9 +6,12 @@
     border-radius: 0.5rem;
     transition: transform 500ms ease;
     overflow: hidden;
+    transition: all 0.5s ease;
   }
   .card1:hover{
     transform: scale(1.05);
+    box-shadow: 7px 13px 37px #000;
+
   }
 .card1:hover .card-title1::after{
     transform: scaleX(1);
@@ -30,9 +33,11 @@
     border-radius: 0.5rem;
     transition: transform 500ms ease;
     overflow: hidden;
+    transition: all 0.5s ease;
 }
 .card2:hover{
     transform: scale(1.05);
+    box-shadow: 7px 13px 37px #000;
   }
 .card2:hover .card-title1::after{
     transform: scaleX(1);
@@ -55,9 +60,11 @@
     border-radius: 0.5rem;
     transition: transform 500ms ease;
     overflow: hidden;
+    transition: all 0.5s ease;
 }
 .card3:hover{
     transform: scale(1.05);
+    box-shadow: 7px 13px 37px #000;
   }
 .card3:hover .card-title1::after{
     transform: scaleX(1);
@@ -80,9 +87,11 @@
     border-radius: 0.5rem;
     transition: transform 500ms ease;
     overflow: hidden;
+    transition: all 0.5s ease;
 }
 .card4:hover{
     transform: scale(1.05);
+    box-shadow: 7px 13px 37px #000;
   }
 .card4:hover .card-title1::after{
     transform: scaleX(1);
@@ -106,9 +115,11 @@
     border-radius: 0.5rem;
     transition: transform 500ms ease;
     overflow: hidden;
+    transition: all 0.5s ease;
 }
 .card5:hover{
     transform: scale(1.05);
+    box-shadow: 7px 13px 37px #000;
   }
 .card5:hover .card-title1::after{
     transform: scaleX(1);
@@ -131,9 +142,11 @@
     border-radius: 0.5rem;
     transition: transform 500ms ease;
     overflow: hidden;
+    transition: all 0.5s ease;
 }
 .card6:hover{
     transform: scale(1.05);
+    box-shadow: 7px 13px 37px #000;
   }
 .card6:hover .card-title1::after{
     transform: scaleX(1);
@@ -158,9 +171,11 @@
     border-radius: 0.5rem;
     transition: transform 500ms ease;
     overflow: hidden;
+    transition: all 0.5s ease;
 }
 .card7:hover{
     transform: scale(1.05);
+    box-shadow: 7px 13px 37px #000;
   }
 .card7:hover .card-title1::after{
     transform: scaleX(1);
@@ -185,9 +200,11 @@
     border-radius: 0.5rem;
     transition: transform 500ms ease;
     overflow: hidden;
+    transition: all 0.5s ease;
 }
 .card8:hover{
     transform: scale(1.05);
+    box-shadow: 7px 13px 37px #000;
   }
 .card8:hover .card-title1::after{
     transform: scaleX(1);
@@ -213,9 +230,11 @@
     border-radius: 0.5rem;
     transition: transform 500ms ease;
     overflow: hidden;
+    transition: all 0.5s ease;
 }
 .card1m:hover{
     transform: scale(1.05);
+    box-shadow: 7px 13px 37px #000;
   }
 .card1m:hover .card-title1::after{
     transform: scaleX(1);
@@ -239,9 +258,11 @@
     border-radius: 0.5rem;
     transition: transform 500ms ease;
     overflow: hidden;
+    transition: all 0.5s ease;
 }
 .card2m:hover{
     transform: scale(1.05);
+    box-shadow: 7px 13px 37px #000;
   }
 .card2m:hover .card-title1::after{
     transform: scaleX(1);
@@ -265,9 +286,11 @@
     border-radius: 0.5rem;
     transition: transform 500ms ease;
     overflow: hidden;
+    transition: all 0.5s ease;
 }
 .card3m:hover{
     transform: scale(1.05);
+    box-shadow: 7px 13px 37px #000;
   }
 .card3m:hover .card-title1::after{
     transform: scaleX(1);
@@ -281,7 +304,7 @@
     transition-delay: 500ms;
 }
 
-/*----------CARTA 3M---------*/
+/*----------CARTA 4M---------*/
 
 .card4m{
     background: url(/fotos/f1.jpg);
@@ -291,9 +314,11 @@
     border-radius: 0.5rem;
     transition: transform 500ms ease;
     overflow: hidden;
+    transition: all 0.5s ease;
 }
 .card4m:hover{
     transform: scale(1.05);
+    box-shadow: 7px 13px 37px #000;
   }
 .card4m:hover .card-title1::after{
     transform: scaleX(1);
