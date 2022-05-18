@@ -1,331 +1,330 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  /*
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*
   Configuracion General
   */
-@mixin colors($color, $background){
+@mixin colors($color, $background) {
   color: $color;
   background: $background;
 }
 @import "navbar";
-  
-  h1{
-    color: #83311d;
-    text-align: center;
-    font-family: 'Alegreya', serif;
-    font-weight: bold;
-  }
-  h2{
-    font-family: 'Alegreya', serif;
-    font-weight: bolder;
-  
-  }
-  html{
-    height: 100%;
-  }
-  
-  body {
-    @include colors(#83311d,#f5d2ad);
-    font-family: "Fredoka", sans-serif;
-    min-height: 100%;
-  }
-  section,
-  nav,
-  aside,
-  header,
-  .footer {
-    padding: 0.5rem;
-  }
-  
-  @import "mainConteiner";
 
-  /*
+h1 {
+  color: #83311d;
+  text-align: center;
+  font-family: "Alegreya", serif;
+  font-weight: bold;
+}
+h2 {
+  font-family: "Alegreya", serif;
+  font-weight: bolder;
+}
+
+body {
+  @include colors(#83311d, #f5d2ad);
+  font-family: "Fredoka", sans-serif;
+  min-height: 100%;
+}
+section,
+nav,
+aside,
+header,
+.footer {
+  padding: 0.5rem;
+}
+
+@import "mainConteiner";
+
+/*
   Configuracion del index
   */
-  
-  .scroll{
-    height: 1500px;
-  }  
-  .burger {
-    text-align: left;
-    padding: 10px;
-    width: 70%;
-    margin: 10px;
-  }
-  .burger-index{
-    border-radius: 5%;
-    box-shadow: 7px 13px 37px rgb(124, 124, 124);
-    transition: all 0.5s;
-  }
-  .burger-index:hover{
-    box-shadow: 7px 13px 37px #000;
-    background: #000;
-    transform: scale(1.01, 1.01);
-  
-  }
-  ul li:hover{
-    background: none;
-  }
-  ul li{
-    text-align: center;
-    list-style: none;
-    padding: 5px;
-  }
-  .carousel{
-    border-radius: 30px;
-    transition: all 0.5s;
-    box-shadow: 7px 13px 37px rgb(124, 124, 124);
 
+
+.burger-index {
+  border-radius: 5%;
+  box-shadow: 7px 13px 37px rgb(124, 124, 124);
+  transition: all 0.5s;
+}
+.burger-index:hover {
+  box-shadow: 7px 13px 37px #000;
+  background: #000;
+  transform: scale(1.01, 1.01);
+}
+ul li:hover {
+  background: none;
+}
+ul li {
+  text-align: center;
+  list-style: none;
+  padding: 5px;
+}
+.carousel {
+  width: 100%;
+  border-radius: 30px;
+  transition: all 0.5s;
+  box-shadow: 7px 13px 37px rgb(124, 124, 124);
+}
+.carousel:hover {
+  transform: scale(1.01, 1.01);
+  box-shadow: 7px 13px 37px #000;
+  background: #000;
+}
+.glass {
+  position: absolute;
+  pointer-events: none;
+  width: 300px;
+  height: 200px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+  background: transparent;
+  backdrop-filter: blur(10px);
+}
+.footer .row {
+  text-align: center;
+  position: relative;
+  margin-bottom: 30%;
+  bottom: 70%;
+  .col-md-12 a {
+    text-decoration: none;
+    color: #83311d;
+    margin: 0.7rem;
   }
-  .carousel:hover{
-    transform: scale(1.01, 1.01);
-    box-shadow: 7px 13px 37px #000;
-    background: #000;
-  
-  }
-  .glass{
-    position: absolute;
-    pointer-events: none;
-    width: 300px;
-    height: 200px;
-    box-shadow: 0 25px 50px rgba(0,0,0,0.2);
-    background: transparent;
-    backdrop-filter: blur(10px);
-  }
-  .footer .row{
-    text-align: center;
-    position: relative;
-    margin-bottom: 30%;
-    bottom: 70%;
-    .col-md-12 a{
-      text-decoration: none;
-      color: #83311d;
-      margin: 0.7rem;
-    }
-  }
-  /*
+}
+/*
   configuracion de Blog
   */
-  
-  /*
+.cardblog{
+    background: url(/fotos/hamburguesa-2.jpg);
+    background-size: cover;
+    padding: 8rem 0 0;
+    max-width: 35ch;
+    border-radius: 0.5rem;
+    transition: transform 500ms ease;
+    overflow: hidden;
+    transition: all 0.5s ease;
+  }
+.cardblog:hover{
+    transform: scale(1.05);
+    box-shadow: 7px 13px 37px #000;
+
+  }
+.cardblog:hover .card-title1::after{
+    transform: scaleX(1);
+}
+.cardblog:hover .card-content1{
+    transform: translateY(0);
+    transition-delay: 300ms;
+}
+.cardblog:hover .card-content1 >*:not(.card-title1){
+    opacity: 1;
+    transition-delay: 500ms;
+}
+/*
   configuracion log-in
   */
-  .header-log{
-    background: #f5d2ad;
-    text-align: center;
-    align-self: center;
-    width: 400px;
-    border-radius: 30px;
-    box-shadow: 7px 13px 37px #000;
-    position: absolute;
-    top: 4%;
-    left: 0;
-    right: 0;
-    margin: auto;
-  }
+.header-log {
+  background: #f5d2ad;
+  text-align: center;
+  align-self: center;
+  width: 400px;
+  border-radius: 30px;
+  box-shadow: 7px 13px 37px #000;
+  position: absolute;
+  top: 4%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
 
-  .logburg .banner{
-    min-height: 100vh;
-    background: url(/fotos/h2.jpg) no-repeat center
-      center fixed;
-    background-size: cover;
-    filter: blur(5px);
-  }
-  
-  
-  
-  .form-login {
-    width: 400px;
-    height: 400px;
-    margin: auto;
-    margin-top: 100px;
-    margin-bottom: 70px;
-    box-shadow: 7px 13px 37px #000;
-    padding: 20px 30px;
-    background: #f5d2ad;
-    border-radius: 5%;
-    position: absolute;
-    top: 15%;
-    left: 0;
-    right: 0;
-    
-  }
-  
-  
-  .form-login h3 {
+.logburg .banner {
+  min-height: 100vh;
+  background: url(/fotos/h2.jpg) no-repeat center center fixed;
+  background-size: cover;
+  filter: blur(5px);
+}
+
+.form-login {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 70px;
+  box-shadow: 7px 13px 37px #000;
+  padding: 20px 30px;
+  background: #f5d2ad;
+  border-radius: 5%;
+  position: absolute;
+  top: 15%;
+  left: 0;
+  right: 0;
+  h3{
     margin: 0;
     text-align: center;
     height: 40px;
     margin-bottom: 30px;
     font-size: 20px;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid;     
   }
-  
-  @import "controls";
+}
 
-  
 
-  .form-login p {
-    height: 40px;
-    text-align: center;
-  }
-  .form-login a {
+
+@import "controls";
+
+.form-login p {
+  height: 40px;
+  text-align: center;
+  a{
     color: #83311d;
-    font-family: 'Alegreya', serif;
+    font-family: "Alegreya", serif;
     text-decoration: none;
   }
-  .footer-log-in{
-    width: 300px; 
-    position: absolute;
-    top: 90%;
-    left: 39%;
-  }
-  .footer-log-in .row{
-    text-align: center;
-    position: absolute;
-    width: 420px;
-    margin-top: 10%;
-    .col-md-12 a{
+}
+
+.footer-log-in {
+  width: 300px;
+  position: absolute;
+  top: 90%;
+  left: 39%;
+}
+.footer-log-in .row {
+  text-align: center;
+  position: absolute;
+  width: 420px;
+  margin-top: 10%;
+  .col-md-12 a {
     text-decoration: none;
     list-style: none;
     color: #83311d;
-    }
   }
+}
 
-  /*
+/*
   configurcion de registrarse
   */
-  .form-login-res {
-    width: 400px;
-    height: 400px;
-    box-shadow: 7px 13px 37px rgb(124, 124, 124);
-    padding: 20px 30px;
-    border-radius: 5%;
-    transition: all 0.5s ease;
-  }
-  .form-login-res:hover{
-    box-shadow: 7px 13px 37px #000;
-    transform: scale(1.01,1.01);
-  }
-  .form-login-res h3{
+.form-login-res {
+  width: 400px;
+  height: 400px;
+  box-shadow: 7px 13px 37px rgb(124, 124, 124);
+  padding: 20px 30px;
+  border-radius: 5%;
+  transition: all 0.5s ease;
+  h3{
     margin-top: 10px;
     margin-bottom: 25px;
+
   }
-  .buttons{
-    @include colors(#f5d2ad,#83311d);
-    border-radius: 30px;
-    font-size: larger;
-    font-family: 'Alegreya', serif;
-    font-weight:normal;
-    transition: all 0.5s ease;
-    width: 100%;
-    height: 40px;
-    border: none;
-    margin-bottom: 16px;
-  }
-  .buttons:hover,
-  .buttons:focus{
-    @include colors(#f5d2ad,#791f09 );
-    border: 1px solid #83311d;
-    box-shadow: 7px 13px 37px #000;
-    outline: 0;
-  }
-  /*
+}
+.form-login-res:hover {
+  box-shadow: 7px 13px 37px #000;
+  transform: scale(1.01, 1.01);
+}
+
+.buttons {
+  @include colors(#f5d2ad, #83311d);
+  border-radius: 30px;
+  font-size: larger;
+  font-family: "Alegreya", serif;
+  font-weight: normal;
+  transition: all 0.5s ease;
+  width: 100%;
+  height: 40px;
+  border: none;
+  margin-bottom: 16px;
+}
+.buttons:hover,
+.buttons:focus {
+  @include colors(#f5d2ad, #791f09);
+  border: 1px solid #83311d;
+  box-shadow: 7px 13px 37px #000;
+  outline: 0;
+}
+/*
   configuracion info.html
   */
-  @import "infoform";
+@import "infoform";
 
-  
-  div textarea{
-    margin: 30px;
-  }
+div textarea {
+  margin: 30px;
+}
 
-  /*
+/*
   menu
   */
-  .card{
-    border-radius: 30px;
-  }
-  
-  .extras .row{
-    padding: 0.55em;
-  }
-  
-  @import "cards";
+.card {
+  border-radius: 30px;
+}
 
-  .card-content1{
-    padding: 1.5rem;
-    background: linear-gradient(rgba(0,0,0,0),
-    rgba(0,0,0,1));
-    transform: translateY(65%);
-    transition: transform 300ms ease;
-  }
-  .card-content1 >*:not(.card-title1){
-    opacity: 0;
-    transition: opacity 300ms linear;
-  }
-  
-  .card-title1{
+.extras .row {
+  padding: 0.55em;
+}
+
+@import "cards";
+
+.card-content1 {
+  padding: 1.5rem;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+  transform: translateY(65%);
+  transition: transform 300ms ease;
+  .card-title1 {
     position: relative;
     width: max-content;
     color: #f5d2ad;
   }
-  
-  .card-body1{
-    color: #f5d2ad;
-    padding-top: 10px;
+}
+.card-content1 > *:not(.card-title1) {
+  opacity: 0;
+  transition: opacity 300ms linear;
+}
 
-  }
-  .card-title1::after{
-    content: "";
-    position: absolute;
-    height: 4px;
-    left: 0;
-    bottom: -10px;
-    width: 100%;
-    background-color: #83311d;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 300ms ease;
+.card-body1 {
+  color: #f5d2ad;
+  padding-top: 10px;
+}
+.card-title1::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  background-color: #83311d;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 300ms ease;
+}
+.button1 {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  @include colors(#f5d2ad, #83311d);
+  padding: 0.5em 1.25em;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+}
 
-  }
-  .button1{
-    cursor: pointer;
-    display: inline-block;
-    text-decoration: none;
-    @include colors(#f5d2ad,#83311d);
-    padding: 0.5em 1.25em;
-    border-radius: 0.5rem;
-    text-transform: uppercase;
+.button1:hover,
+.button1:focus {
+  @include colors(#f5d2ad, #791f09);
+  transition: background-color 300ms ease;
+}
 
-  }
-  
-  .button1:hover,
-  .button1:focus{
-    @include colors(#f5d2ad,#791f09);
-    transition: background-color 300ms ease;
-  }
-
-
-  /*
+/*
   Responsive
   */
 
-  
-  @media only screen and (max-width: 1000px){
-    .container{
-      grid-template-columns: 1fr;
-      grid-template-rows:  1fr 1fr 1fr 1fr 1fr;
-      grid-template-areas: 
+@media only screen and (max-width: 1000px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
       "header"
       "prod"
       "extras"
       "aside"
       "footer ";
-      gap: 10px;
-    }
-    
+    gap: 10px;
   }
+}

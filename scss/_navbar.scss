@@ -4,23 +4,19 @@ nav{
     border-radius: 30px;
     box-shadow: 7px 13px 37px rgb(124, 124, 124);
     transition: all 0.5s ease;
+    a{
+      transition: all 0.5s ease;
+    }
   }
   nav:hover{
     box-shadow: 7px 13px 37px #000;
     transform: scale(1.01,1.01);
-  }
-
-  nav a{
-    transition: all 0.5s ease;
-
-  }
-  nav a:hover{
-    background: rgb(223, 223, 222);
-    border-radius: 5%;
-    transform: scale(1.05, 1.05);
-    transition: background-color 0.5s ease-out;
-
-
+    a:hover{
+      background: rgb(223, 223, 222);
+      border-radius: 5%;
+      transform: scale(1.05, 1.05);
+      transition: background-color 0.5s ease-out;
+    }
   }
   .nav-item:hover{
     transition: background-color 1s ease-out;
