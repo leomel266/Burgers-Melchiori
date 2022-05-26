@@ -181,8 +181,6 @@ ul li {
   */
 .header-log {
   background: #f5d2ad;
-  text-align: center;
-  align-self: center;
   width: 400px;
   border-radius: 30px;
   box-shadow: 7px 13px 37px #000;
@@ -212,13 +210,14 @@ ul li {
   top: 15%;
   left: 0;
   right: 0; }
-  .form-login h3 {
-    margin: 0;
-    text-align: center;
-    height: 40px;
-    margin-bottom: 30px;
-    font-size: 20px;
-    border-bottom: 1px solid; }
+
+.form-login h3 {
+  margin: 0;
+  text-align: center;
+  height: 40px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  border-bottom: 1px solid; }
 
 .controls {
   width: 100%;
@@ -755,7 +754,6 @@ div textarea {
   */
 @media only screen and (max-width: 800px) {
   .container {
-    grid: block;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: "header" "prod" "extras" "aside" "footer ";
